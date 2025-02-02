@@ -28,6 +28,7 @@ if st.button('Predict'):
     vector_input = tfidf.transform([transformed_sms])
     #3 predict
     result = model.predict(vector_input)[0]
+    # sprint(model.predict(vector_input))
     #4 display
     if result == 1:
         st.header('spam')
