@@ -6,8 +6,8 @@ from nltk.corpus import stopwords
 from nltk.stem.porter import PorterStemmer
 ps = PorterStemmer()
 
-tfidf = pickle.load(open('vectorizer.pkl','rb'))
-model = pickle.load(open('model.pkl','rb'))
+tfidf = pickle.load(open('spam_project/vectorizer.pkl','rb'))
+model = pickle.load(open('spam_project/model.pkl','rb'))
 
 st.title("Email / SMS spam classifier")
 
